@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- keywords -->
+    <meta name="keywords" content="">
+    <!-- descriptions -->
+    <meta name="description" content="">
+    <!-- author -->
+    <meta name="author" content="lesser:form-multi-step">
+    <!-- robot -->
+    <meta name="robot" content="follow">
+    <!-- charset -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesser | Form Multi Step</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- lesser -->
+    <link rel="stylesheet" href="css/lesser.css">
+</head>
+<body class="theme-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm navbar-lesser">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lesser</a>
+            <button class="navbar-toggler" data-target="#navigation" data-toggle="collapseLesser" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="svg/apps-outline.svg" class="nav-svg" width="25" height="25" alt="">
+            </button>
+
+            <div id="navigation" class="collapse navbar-collapse">
+                <button class="navbar-closer" data-target="#navigation" data-toggle="collapseLesserHide">
+                    <img src="svg/close-circle-outline.svg" width="25" height="25" alt="">
+                </button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-lg-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="themeSelect" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Theme
+                        </a>
+                        <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="themeSelect">
+                            <a class="dropdown-item theme-change" id="theme-light" href="#">
+                                <span></span>
+                            </a>
+                            <a class="dropdown-item theme-change" id="theme-dark" href="#">
+                                <span></span>
+                            </a>
+                            <a class="dropdown-item theme-change" id="theme-orange" href="#">
+                                <span></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link nav-svg">
+                            <img src="svg/logo-github.svg" width="25" height="25" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link nav-svg">
+                            <img src="svg/logo-facebook.svg" width="25" height="25" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link nav-svg">
+                            <img src="svg/logo-google.svg" width="25" height="25" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-overlay"></div>
+        </div>
+    </nav>
+
+    <section class="mt-5 mb-5">
+        <div class="container">
+            <section class="box-lesser mx-auto">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-lesser" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h1 class="heading-lesser text-center mt-5">
+                    Form - Multi Step
+                </h1>
+                <p class="text-muted text-center">HTML CSS JS</p>
+                <div class="card shadow-sm border-0 mt-4 card-lesser">
+                    <div class="card-body">
+                        <form id="multi-form" action="#">
+                            <div class="lesser-step">
+                                <div class="form-group">
+                                    <input type="text" id="name" placeholder="Name" class="form-control form-control-lesser">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" id="phone" placeholder="Phone" class="form-control form-control-lesser">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="Email" class="form-control form-control-lesser">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-dark btn-lesser" data-toggle="nextStep">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesser-step">
+                                <div class="form-group">
+                                    <input type="text" id="address" placeholder="Address" class="form-control form-control-lesser">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" id="age" placeholder="Age" class="form-control form-control-lesser">
+                                </div>
+                                <div class="form-group">
+                                    <select id="salary" class="form-control-lesser">
+                                        <option value="undefined" selected disabled>Your Salary</option>
+                                        <option value="">Less Than $2,000</option>
+                                        <option value="">$2,000 - $5,000</option>
+                                        <option value="">$5,000 - $10,000</option>
+                                        <option value="">$10,000 +</option>
+                                    </select>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-dark btn-lesser" data-toggle="prevStep">Prev</button>
+                                        <button type="button" class="btn btn-dark btn-lesser" data-toggle="nextStep">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesser-step">
+                                <div class="form-group">
+                                    <input type="text" id="username" placeholder="Username" class="form-control form-control-lesser">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" placeholder="Password" class="form-control form-control-lesser">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="passwordVerify" placeholder="Verify Password" class="form-control form-control-lesser">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-dark btn-lesser" data-toggle="prevStep">Prev</button>
+                                        <button type="submit" class="btn btn-dark btn-lesser btn-submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer class="footer-lesser">
+        <p>
+            © 2020 Lesser - Form Multi - Step Powered By Kittichai Mala-in
+        </p>
+    </footer>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- lesser -->
+    <script src="js/lesser.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#multi-form').steps({ // Function by Lesser
+                next: 'nextStep', // Data Toggle
+                prev: 'prevStep', // Data Toggle
+                step: '.lesser-step', // Class or ID
+                progress: '.progress-bar', // Class or ID
+                required: {
+                    /*
+                        * 1, 2, 3, 4, ... Is Class or ID Input to check valid in each steps
+                    */
+                    1: [
+                        '#name',  
+                        '#phone',
+                        '#email'
+                    ],
+                    2: [
+                        '#address',
+                        '#age'
+                    ],
+                    3: [
+                        '#username',
+                        '#password',
+                        '#passwordVerify'
+                    ]
+                },
+                success: function() {
+                    // Form Is Valid
+                    // Put Your Code Here
+                }
+            })
+        })
+    </script>
+</body>
+</html>
